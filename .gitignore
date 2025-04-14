@@ -1,0 +1,8 @@
+# Ignore Visual Studio folders and files
+.vs/
+
+# Ignore other common editor/IDE files
+.idea/
+*.suo
+*.user
+*.userosscache
