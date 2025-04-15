@@ -44,5 +44,6 @@ int main() {
 		
 	while (Q--) {
 		scanf("%lld %lld", &L, &R);
+		...
 	}
 }
