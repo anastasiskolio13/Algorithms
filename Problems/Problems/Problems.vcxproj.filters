@@ -18,5 +18,11 @@
     <ClCompile Include="counter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="schoolnet iterative.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="schoolnet recursive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
