@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <queue>
-#define MAXN 500000
+#define MAXN 1000000
 #define with 0
 #define without 1
 using namespace std;
