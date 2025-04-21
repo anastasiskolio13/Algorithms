@@ -39,7 +39,6 @@ int main() {
 			++i;
 			--j;
 		}
-
 	}
 	printf("%d\n", maximumTime);
 }
