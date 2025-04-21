@@ -1,12 +1,25 @@
-.vs/
+# User-specific files
 *.user
+
+# Visual Studio folders and settings
+.vs/
+
+# Build output directories
 **/x64/Debug/
 **/x64/Release/
 **/Debug/
 **/Release/
+
+# Build artifacts
 *.ilk
 *.log
 *.pdb
 *.idb
 *.exe
-*.tlog/
+
+# Temporary log files
+*.tlog
+
+# Visual Studio-generated files/folders to ignore
+.vs2019/
+.vs2017/
