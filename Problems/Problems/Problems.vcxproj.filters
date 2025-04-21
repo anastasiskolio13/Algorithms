@@ -51,5 +51,8 @@
     <ClCompile Include="PairedUp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="They Are Everywhere.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
