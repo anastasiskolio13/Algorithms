@@ -13,6 +13,7 @@ int N;
 int B;
 int M;
 
+
 void Dijkstra(int s) {
 	for (int v = 0; v < N; ++v)
 		dist[v] = INF;

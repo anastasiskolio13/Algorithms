@@ -53,7 +53,5 @@ int main() {
 		Adj[--v].push_back({ --u, w });
 	}
 	Dijkstra();
-	//for (int i = 0; i < N; ++i)
-		//cout << dist[i] << " ";
 	printf("%ld\n", dist[t]);
 }

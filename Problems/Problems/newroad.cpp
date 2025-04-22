@@ -11,7 +11,7 @@ using namespace std;
 set<array<int, 3>> Q;
 set<array<int, 3>> S;
 vector<vector<pair<int, int>>> Adj(MAXN);
-vector<int> dist(MAXN);
+vector<vector<int>> dist(MAXN, vector<int>(2));
 int N;
 int M;
 int K;
@@ -20,8 +20,8 @@ int t;
 
 void Dijkstra() {
 	for (int v = 0; v < N; ++v)
-		dist[v] = INF;
-	dist[s] = 0;
+		dist[v][0] = dist[v][1] = INF;
+	dist[s][0] = 0;
 	Q.insert({ 0, s, 0 });
 	while (!Q.empty()) {
 		int w = (*Q.begin())[0];
@@ -34,21 +34,20 @@ void Dijkstra() {
 			int w = adjacent.second;
 			if (S.find({ v, u, w }) != S.end()) {
 				if (!flag) {
-					if (dist[v] + w < dist[u]) {
-						dist[u] = dist[v] + w;
-						Q.insert({ dist[u], u, 1 });
+					if (dist[v][0] + w < dist[u][1]) {
+						dist[u][1] = dist[v][0] + w;
+						Q.insert({ dist[u][1], u, 1});
 					}
 				}
 			}
 			else {
-				if (dist[v] + w < dist[u]) {
-					dist[u] = dist[v] + w;
-					Q.insert({ dist[u], u, flag });
+				if (dist[v][flag] + w < dist[u][flag]) {
+					dist[u][flag] = dist[v][flag] + w;
+					Q.insert({ dist[u][flag], u, flag});
 				}
 			}
 		}
 	}
-
 }
 
 int main() {
@@ -62,5 +61,5 @@ int main() {
 			S.insert({ v, u, w });
 	}
 	Dijkstra();
-	printf("%d\n", dist[t]);
+	printf("%d\n", dist[t][1]);
 }
