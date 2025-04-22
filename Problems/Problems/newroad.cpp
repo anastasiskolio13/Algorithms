@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+ο»Ώ#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <vector>
 #include <set>
@@ -26,8 +26,7 @@ void Dijkstra() {
 	while (!Q.empty()) {
 		int w = (*Q.begin())[0];
 		int v = (*Q.begin())[1];
-		// Έχω χρησιμοποιήσει ήδη μία από τις επιπρόσθετες ακμές;
-		int flag = (*Q.begin())[2]; 
+		int flag = (*Q.begin())[2];
 		Q.erase(Q.begin());
 		for (auto adjacent : Adj[v]) {
 			int u = adjacent.first;
@@ -36,14 +35,14 @@ void Dijkstra() {
 				if (!flag) {
 					if (dist[v][0] + w < dist[u][1]) {
 						dist[u][1] = dist[v][0] + w;
-						Q.insert({ dist[u][1], u, 1});
+						Q.insert({ dist[u][1], u, 1 });
 					}
 				}
 			}
 			else {
 				if (dist[v][flag] + w < dist[u][flag]) {
 					dist[u][flag] = dist[v][flag] + w;
-					Q.insert({ dist[u][flag], u, flag});
+					Q.insert({ dist[u][flag], u, flag });
 				}
 			}
 		}
@@ -57,7 +56,7 @@ int main() {
 		int v, u, w;
 		scanf("%d %d %d", &v, &u, &w);
 		Adj[--v].push_back({ --u, w });
-		if (i >= M) 
+		if (i >= M)
 			S.insert({ v, u, w });
 	}
 	Dijkstra();
