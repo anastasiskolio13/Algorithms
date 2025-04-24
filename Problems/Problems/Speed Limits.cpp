@@ -6,24 +6,26 @@
 #include <set>
 #include <algorithm>
 #define MAXN 150
+#define MAXV 500
 #define INF DBL_MAX
 using namespace std;
 
 set<array<double, 3>> Q;
 vector<vector<array<int, 3>>> Adj(MAXN);
-vector<double> dist(MAXN);
-vector<int> parent(MAXN);
+vector<vector<double>> dist(MAXN, vector<double>(MAXV + 1));
+vector<vector<pair<int, int>>> parent(MAXN, vector<pair<int, int>>(MAXV + 1));
 vector<int> path;
 int N;
 int M;
 int D;
 
-void Dijkstra() {
+void Dijkstra(int maximumSpeedLimit) {
 	for (int v = 0; v < N; ++v)
-		dist[v] = INF;
-	dist[0] = 0;
-	parent[0] = 0;
-	Q.insert({(double) 0, (double) 0, (double) 70 });
+		for (int speedLimit = 1; speedLimit <= maximumSpeedLimit; ++speedLimit)
+			dist[v][speedLimit] = INF;
+	parent[0][70] = { 0, 70 };
+	dist[0][70] = 0;
+	Q.insert({ 0,  0,  70 });
 	while (!Q.empty()) {
 		double d = (*Q.begin())[0];
 		int v = (int)(*Q.begin())[1];
@@ -33,10 +35,10 @@ void Dijkstra() {
 			int u = adjacent[0];
 			int newSpeed = adjacent[1] != 0 ? adjacent[1] : currentSpeed;
 			int length = adjacent[2];
-			if (dist[v] + (double)length / newSpeed < dist[u]) {
-				dist[u] = dist[v] + (double)length / newSpeed;
-				parent[u] = v;
-				Q.insert({ dist[u], (double) u, (double) newSpeed });
+			if (dist[v][currentSpeed] + (double)length / newSpeed < dist[u][newSpeed]) {
+				parent[u][newSpeed] = { v, currentSpeed };
+				dist[u][newSpeed] = dist[v][currentSpeed] + (double)length / newSpeed;
+				Q.insert({ dist[u][newSpeed], (double) u, (double) newSpeed });
 			}
 		}
 	}
@@ -44,18 +46,27 @@ void Dijkstra() {
 
 int main() {
 	scanf("%d %d %d", &N, &M, &D);
+	int maximumSpeedLimit = 0;
 	for (int i = 0; i < M; ++i) {
 		int v, u, s, l;
 		scanf("%d %d %d %d", &v, &u, &s, &l);
 		Adj[v].push_back({ u, s, l });
+		maximumSpeedLimit = max(maximumSpeedLimit, s);
 	}
-	Dijkstra();
+	Dijkstra(maximumSpeedLimit);
+	int optimalSpeedLimit = 1;
+	for (int speedLimit = 2; speedLimit <= maximumSpeedLimit; ++speedLimit)
+		if (dist[D][speedLimit] < dist[D][optimalSpeedLimit])
+			optimalSpeedLimit = speedLimit;
 	int v = D;
-	while (v != parent[v]) {
+	int speedLimit = optimalSpeedLimit;
+	while (v != 0) {
 		path.push_back(v);
-		v = parent[v];
+		int u = v;
+		v = parent[u][speedLimit].first;
+		speedLimit = parent[u][speedLimit].second;
 	}
-	path.push_back(0);
+	path.push_back(v);
 	reverse(path.begin(), path.end());
 	for (int v : path)
 		printf("%d ", v);
