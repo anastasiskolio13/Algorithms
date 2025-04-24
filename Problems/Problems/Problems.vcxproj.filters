@@ -87,5 +87,17 @@
     <ClCompile Include="driveme.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Speed Limits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Convex Hull.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filiki.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="evencycle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
