@@ -8,9 +8,9 @@
 #define INF LONG_MAX
 using namespace std;
 
-set<array<long, 3>> Q;
+set<array<long long, 3>> Q;
 vector<vector<pair<int, int>>> Adj(MAXN);
-vector<long> dist(MAXN);
+vector<vector<long long>> dist(MAXN, vector<long long>(2));
 int N;
 int M;
 int s;
@@ -18,28 +18,26 @@ int t;
 int p;
 int q;
 
-void Relax(int v, int u, int w, int flag) {
-	if (dist[v] + w < dist[u] || dist[v] + w >= dist[u] && ) {
-		dist[u] = dist[v] + w;
-		Q.insert({ dist[u], u, flag });
-	}
-}
 
 void Dijkstra() {
 	for (int v = 0; v < N; ++v)
-		dist[v] = INF;
-	dist[s] = 0;
+		dist[v][0] = dist[v][1] = INF;
+	dist[s][0] = 0;
 	Q.insert({ 0, s, 0 });
 	while (!Q.empty()) {
-		long d = (*Q.begin())[0];
+		long long d = (*Q.begin())[0];
 		int v = (int)(*Q.begin())[1];
-		int flag = v == p ? 1 : (int)(*Q.begin())[2];
+		int j = (int)(*Q.begin())[2];
 		Q.erase(Q.begin());
 		for (auto adjacent : Adj[v]) {
 			int u = adjacent.first;
 			int w = adjacent.second;
-			if ((u == q && flag) || (u != q)) 
-				Relax(v, u, w, flag);
+			if (u == q && j == 0)
+				continue;
+			if (dist[v][j] + w < dist[u][j || !j && u == p]) {
+				dist[u][j || !j && u == p] = dist[v][j] + w;
+				Q.insert({ dist[u][j || !j && u == p], u, j || !j && u == p });
+			}
 		}
 	}
 }
@@ -53,5 +51,5 @@ int main() {
 		Adj[--v].push_back({ --u, w });
 	}
 	Dijkstra();
-	printf("%ld\n", dist[t]);
+	printf("%lld\n", min(dist[t][0], dist[t][1]));
 }

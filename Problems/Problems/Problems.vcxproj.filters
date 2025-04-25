@@ -99,5 +99,8 @@
     <ClCompile Include="evencycle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CowRun.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
