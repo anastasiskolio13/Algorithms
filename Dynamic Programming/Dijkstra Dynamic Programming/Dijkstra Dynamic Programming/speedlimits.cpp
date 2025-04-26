@@ -46,7 +46,7 @@ void Dijkstra(int maximumSpeedLimit) {
 
 int main() {
 	scanf("%d %d %d", &N, &M, &D);
-	int maximumSpeedLimit = 0;
+	int maximumSpeedLimit = 70;
 	for (int i = 0; i < M; ++i) {
 		int v, u, s, l;
 		scanf("%d %d %d %d", &v, &u, &s, &l);
