@@ -66,9 +66,6 @@
     <ClCompile Include="newroad.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="shortcuts.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="supgame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
