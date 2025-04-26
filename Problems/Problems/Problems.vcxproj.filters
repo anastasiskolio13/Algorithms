@@ -102,5 +102,17 @@
     <ClCompile Include="CowRun.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="restaurants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="seti.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hydrocarbons.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MilkPumping.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
