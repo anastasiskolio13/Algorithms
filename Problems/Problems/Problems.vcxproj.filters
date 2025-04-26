@@ -63,12 +63,6 @@
     <ClCompile Include="cgiving.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="newroad.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="supgame.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="FlightDiscount.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -79,15 +73,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="tournament.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="driveme.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Speed Limits.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Convex Hull.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="filiki.cpp">

@@ -127,12 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Problems\Problems\convexhull.cpp" />
-    <ClCompile Include="..\..\Problems\Problems\driveme.cpp" />
-    <ClCompile Include="..\..\Problems\Problems\flightdiscount.cpp" />
-    <ClCompile Include="..\..\Problems\Problems\shortcuts.cpp" />
-    <ClCompile Include="..\..\Problems\Problems\speedlimits.cpp" />
-    <ClCompile Include="..\..\Problems\Problems\supgame.cpp" />
+    <ClCompile Include="convexhull.cpp" />
+    <ClCompile Include="driveme.cpp" />
+    <ClCompile Include="flightdiscount.cpp" />
+    <ClCompile Include="newroad.cpp" />
+    <ClCompile Include="shortcuts.cpp" />
+    <ClCompile Include="speedlimits.cpp" />
+    <ClCompile Include="supgame.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,22 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Problems\Problems\driveme.cpp">
+    <ClCompile Include="convexhull.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Problems\Problems\convexhull.cpp">
+    <ClCompile Include="driveme.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Problems\Problems\flightdiscount.cpp">
+    <ClCompile Include="flightdiscount.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Problems\Problems\supgame.cpp">
+    <ClCompile Include="newroad.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Problems\Problems\shortcuts.cpp">
+    <ClCompile Include="shortcuts.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Problems\Problems\speedlimits.cpp">
+    <ClCompile Include="speedlimits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="supgame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
