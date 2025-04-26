@@ -20,8 +20,7 @@ int Dijkstra(int flowRate) {
 	dist[0] = 0;
 	Q.insert({ 0, 0 });
 	while (!Q.empty()) {
-		int d = Q.begin()->first;
-		int v = Q.begin()->second;
+		int v = Q.begin()->second; // v = argmin{dist[u]}.
 		Q.erase(Q.begin());
 		for (auto adjacent : Adj[v]) {
 			int u = adjacent[0];
