@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="schoolnet iterative.cpp">
+    <ClCompile Include="schoolnet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Tree Matching.cpp">
+    <ClCompile Include="treematching.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
