@@ -13,7 +13,6 @@ int H;
 int J;
 int N;
 
-
 int main() {
 	scanf("%d %d %d", &H, &J, &N);
 	for (int i = 0; i < N; ++i) {
