@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="geppetto.cpp">
+    <ClCompile Include="aerodrom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
