@@ -11,7 +11,7 @@ vector<int> R(MAXM);
 int N;
 int M;
 
-// Maximizing the number of pairs with greedy algorithm using two pointers method. 
+// Maximizing the number of pairs with a greedy algorithm using two pointers method. 
 int totalPairsFormedWithMaximumDifferrence(int D) {
 	int totalPairs = 0;
 	int j = 0;
