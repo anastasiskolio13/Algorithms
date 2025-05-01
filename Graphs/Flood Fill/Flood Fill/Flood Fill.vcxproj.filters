@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Dijkstra.cpp">
+    <ClCompile Include="mecho.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Disjoint Sets.cpp">
+    <ClCompile Include="lightson.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2f1626f0-9bb7-4577-8acf-415386757003}</ProjectGuid>
-    <RootNamespace>Templates</RootNamespace>
+    <ProjectGuid>{a302bd7a-24a1-4a02-b570-84ca435d4ff4}</ProjectGuid>
+    <RootNamespace>FloodFill</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,8 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Dijkstra.cpp" />
-    <ClCompile Include="Disjoint Sets.cpp" />
+    <ClCompile Include="lightson.cpp" />
+    <ClCompile Include="mecho.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
