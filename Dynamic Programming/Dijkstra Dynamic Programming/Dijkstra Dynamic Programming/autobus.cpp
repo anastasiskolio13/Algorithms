@@ -54,7 +54,7 @@ int main() {
 			if (v != u && minimumWeightEdge[v][u] != 0)
 				Adj[v].push_back({ u, minimumWeightEdge[v][u] });
 	scanf("%d %d", &K, &T);
-	// The shortest path between v, u (if a path exists) it can be more than N - 1 edges.
+	// The shortest path between v, u (if it exists) it can't be more than N - 1 edges.
 	K = min(N - 1, K);
 	for (int v = 0; v < N; ++v)
 		Dijkstra(v);
