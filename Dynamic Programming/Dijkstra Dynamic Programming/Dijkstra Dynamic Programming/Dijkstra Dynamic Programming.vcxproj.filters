@@ -36,5 +36,8 @@
     <ClCompile Include="supgame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="autobus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
