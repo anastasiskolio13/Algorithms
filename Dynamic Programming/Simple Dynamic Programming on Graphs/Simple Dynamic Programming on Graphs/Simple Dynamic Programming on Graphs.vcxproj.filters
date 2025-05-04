@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="reachforthetop.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="frog2 WA.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="alpacadistancing WA.cpp">
+    <ClCompile Include="timeismooney.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
