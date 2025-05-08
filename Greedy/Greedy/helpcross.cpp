@@ -1,4 +1,8 @@
-#include <bits/stdc++.h>
+#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+#include <vector>
+#include <set>
+#include <algorithm>
 #define MAXC 20000
 #define MAXN 20000
 using namespace std;

@@ -3,6 +3,7 @@
 #include <vector>
 #include <algorithm>
 #include <climits>
+#include <cmath>
 #define MAXN 1000
 #define MAXT_max 1000
 #define INF INT_MAX
@@ -27,7 +28,7 @@ int main() {
 		Adj[--v].push_back(--u);
 	}
 	// Maximum number of days that a trip can last to be profitable.
-	int T_max = *max_element(P.begin(), P.begin() + N) / C;
+	int T_max = ceil((double)*max_element(P.begin(), P.begin() + N) / C) - 1;
 	dp[T_max % 2][0] = -C * T_max * T_max;
 	for (int v = 1; v < N; ++v)
 		dp[T_max % 2][v] = -INF;
