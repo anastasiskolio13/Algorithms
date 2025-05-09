@@ -21,9 +21,6 @@
     <ClCompile Include="frog2 WA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="alpacadistancing WA.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="bestwalk.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -31,6 +28,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="lunapark.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alpacadistancing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
