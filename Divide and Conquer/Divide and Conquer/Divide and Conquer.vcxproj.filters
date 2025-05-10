@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="supermarket.cpp">
+    <ClCompile Include="maxksum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
