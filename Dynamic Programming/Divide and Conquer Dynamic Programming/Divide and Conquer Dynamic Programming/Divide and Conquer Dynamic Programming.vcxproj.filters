@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="supermarket.cpp">
+    <ClCompile Include="guardiansofthelunatics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cowrun.cpp">
+    <ClCompile Include="subarraysquares.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
