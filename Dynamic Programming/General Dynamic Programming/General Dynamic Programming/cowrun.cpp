@@ -46,6 +46,7 @@ int main() {
 			}
 		}
 	}
+
 	if (N1 == 0)
 		printf("%lld\n", dp[0][2][1] + N * R[1]);
 	else if (N2 == 0)
