@@ -21,10 +21,7 @@
     <ClCompile Include="subarraysquares.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="arraydivision.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="thebakery.cpp">
+    <ClCompile Include="twosawmills.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
