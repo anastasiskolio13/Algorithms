@@ -21,5 +21,8 @@
     <ClCompile Include="nim.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="coinstack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
