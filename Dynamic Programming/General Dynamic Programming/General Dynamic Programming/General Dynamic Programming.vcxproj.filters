@@ -27,5 +27,8 @@
     <ClCompile Include="chem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="fishboats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
