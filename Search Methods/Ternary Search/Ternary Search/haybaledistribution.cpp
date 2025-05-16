@@ -22,7 +22,7 @@ int main() {
 	scanf("%d", &N);
 	for (int i = 1; i <= N; ++i)
 		scanf("%d", &X[i]);
-	// Ταξινόμηση΄.
+	// Ταξινόμηση.
 	sort(X.begin() + 1, X.begin() + N + 1);
 	// Υπολογισμός μερικών αθροισμάτων.
 	for (int i = 1; i <= N; ++i)
