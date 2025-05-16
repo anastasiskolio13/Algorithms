@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+ï»¿#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <vector>
 #include <climits>
@@ -14,11 +14,11 @@ int main() {
 	for (int i = 1; i <= N; ++i)
 		scanf("%d", &A[i]);
 	int maximumSum = INT_MIN;
-	//  Ãéá êÜèå áñ÷Þ,
+	//  Î“Î¹Î± ÎºÎ¬Î¸Îµ Î±ÏÏ‡Î®,
 	for (int i = 1; i <= N; ++i) {
-		// Äïêßìáóå êÜèå ôÝëïò.
+		// Î”Î¿ÎºÎ¯Î¼Î±ÏƒÎµ ÎºÎ¬Î¸Îµ Ï„Î­Î»Î¿Ï‚.
 		for (int j = i; j <= N; ++j) {
-			// ÐÜñå ôï Üèñïéóìá.
+			// Î Î¬ÏÎµ Ï„Î¿ Î¬Î¸ÏÎ¿Î¹ÏƒÎ¼Î±.
 			int currentSum = 0;
 			for (int k = i; k <= j; ++k)
 				currentSum += A[k];
@@ -27,11 +27,11 @@ int main() {
 	}
 	printf("%d\n", maximumSum);
 	maximumSum = INT_MIN;
-	// Ãéá êÜèå ôÝëïò, 
+	// Î“Î¹Î± ÎºÎ¬Î¸Îµ Ï„Î­Î»Î¿Ï‚, 
 	for (int j = 1; j <= N; ++j) {
-		// Äïêßìáóå êÜèå áñ÷Þ.
+		// Î”Î¿ÎºÎ¯Î¼Î±ÏƒÎµ ÎºÎ¬Î¸Îµ Î±ÏÏ‡Î®.
 		for (int i = 1; i <= j; ++i) {
-			// ÐÜñå ôï Üèñïéóìá.
+			// Î Î¬ÏÎµ Ï„Î¿ Î¬Î¸ÏÎ¿Î¹ÏƒÎ¼Î±.
 			int currentSum = 0;
 			for (int k = i; k <= j; ++k)
 				currentSum += A[k];

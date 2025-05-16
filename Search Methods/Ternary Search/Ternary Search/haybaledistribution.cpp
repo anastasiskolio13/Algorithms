@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+ï»¿#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -22,19 +22,19 @@ int main() {
 	scanf("%d", &N);
 	for (int i = 1; i <= N; ++i)
 		scanf("%d", &X[i]);
-	// Ôáîéíüìçóç´.
+	// Î¤Î±Î¾Î¹Î½ÏŒÎ¼Î·ÏƒÎ·Î„.
 	sort(X.begin() + 1, X.begin() + N + 1);
-	// Õðïëïãéóìüò ìåñéêþí áèñïéóìÜôùí.
+	// Î¥Ï€Î¿Î»Î¿Î³Î¹ÏƒÎ¼ÏŒÏ‚ Î¼ÎµÏÎ¹ÎºÏŽÎ½ Î±Î¸ÏÎ¿Î¹ÏƒÎ¼Î¬Ï„Ï‰Î½.
 	for (int i = 1; i <= N; ++i)
 		PS[i] = PS[i - 1] + X[i];
-	// Õðïëïãéóìüò ãéá êÜèå Y ôï ìåãáëýôåñï i : X[i] <= Y.
+	// Î¥Ï€Î¿Î»Î¿Î³Î¹ÏƒÎ¼ÏŒÏ‚ Î³Î¹Î± ÎºÎ¬Î¸Îµ Y Ï„Î¿ Î¼ÎµÎ³Î±Î»ÏÏ„ÎµÏÎ¿ i : X[i] <= Y.
 	int i = 1;
 	for (int Y = X[1]; Y <= X[N]; ++Y) {
 		while (i <= N && X[i] <= Y)
 			++i;
 		P[Y] = i - 1;
 	}
-	// ÁðÜíôçóç åñùôçìÜôùí.
+	// Î‘Ï€Î¬Î½Ï„Î·ÏƒÎ· ÎµÏÏ‰Ï„Î·Î¼Î¬Ï„Ï‰Î½.
 	scanf("%d", &Q);
 	while (Q--) {
 		scanf("%d %d", &A, &B);

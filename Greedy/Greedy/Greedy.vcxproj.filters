@@ -21,7 +21,7 @@
     <ClCompile Include="lopov.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="completetheprojects.cpp">
+    <ClCompile Include="pairedup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
