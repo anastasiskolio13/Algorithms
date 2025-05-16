@@ -15,19 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="supermarket.cpp">
+    <ClCompile Include="pairselection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cowrun.cpp">
+    <ClCompile Include="maximumaveragesegment.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="twosawmills.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="chem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="reveillon.cpp">
+    <ClCompile Include="bicriteriamst.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
