@@ -24,7 +24,7 @@
     <ClCompile Include="maxsubarraysum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="minimumeuclideanfistance.cpp">
+    <ClCompile Include="minimumeuclideandistance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
