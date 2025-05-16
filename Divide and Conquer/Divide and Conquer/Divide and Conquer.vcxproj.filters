@@ -21,5 +21,8 @@
     <ClCompile Include="maximumksubarraysum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="bearandbowling4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
