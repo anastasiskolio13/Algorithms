@@ -1,4 +1,8 @@
-#include <bits/stdc++.h>
+#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <array>
 #define MAXN 50000
 #define MAXM 200000
 #define eps 1e-6
@@ -31,7 +35,7 @@ void unite(int a, int b) {
 
 pair<long, long> canAchieveAverageAtLeast(double x) {
     for (int i = 0; i < M; ++i) {
-        Ex[i] = {x * E[i][3] - E[i][2], (double) E[i][0], (double) E[i][1]};
+        Ex[i] = {x * E[i][3] - E[i][2], (double)E[i][0], (double)E[i][1]};
         Ex[i][3] = i;
     }
     // MST_Kruskal

@@ -27,5 +27,8 @@
     <ClCompile Include="twoarrayaverage.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="minimumaveragepath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

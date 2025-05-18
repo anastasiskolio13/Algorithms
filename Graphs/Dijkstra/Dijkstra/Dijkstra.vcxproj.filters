@@ -27,5 +27,8 @@
     <ClCompile Include="comebackquickly.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ejoi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
