@@ -21,7 +21,10 @@
     <ClCompile Include="maximumksubarraysum.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="bearandbowling4.cpp">
+    <ClCompile Include="staticrangesumqueries.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="visiblebuildingsqueries.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
