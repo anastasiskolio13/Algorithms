@@ -24,5 +24,8 @@
     <ClCompile Include="theyareeverywhere.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="abknapsack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
