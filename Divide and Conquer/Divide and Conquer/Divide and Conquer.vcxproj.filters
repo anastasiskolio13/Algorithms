@@ -27,5 +27,8 @@
     <ClCompile Include="visiblebuildingsqueries.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="estellessuperbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
