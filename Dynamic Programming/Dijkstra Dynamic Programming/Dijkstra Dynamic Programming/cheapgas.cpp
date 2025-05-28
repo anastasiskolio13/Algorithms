@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+ο»Ώ#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <vector>
 #include <cfloat>
@@ -33,12 +33,12 @@ double Dijkstra() {
 		Q.erase(Q.begin());
 		if (c > dp[i][j][f])
 			continue;
-		// Βάζω βενζίνη.
+		// Ξ’Ξ¬Ξ¶Ο‰ Ξ²ΞµΞ½Ξ¶Ξ―Ξ½Ξ·.
 		if (gasPrice[i][j] != INF_PRICE && f != F && dp[i][j][f] + gasPrice[i][j] < dp[i][j][f + 1]) {
 			dp[i][j][f + 1] = dp[i][j][f] + gasPrice[i][j];
 			Q.insert({ dp[i][j][f + 1], i, j, f + 1 });
 		}
-		// Δεν έχω άλλη βενζίνη, δε μπορώ να πάω πουθενά.
+		// Ξ”ΞµΞ½ Ξ­Ο‡Ο‰ Ξ¬Ξ»Ξ»Ξ· Ξ²ΞµΞ½Ξ¶Ξ―Ξ½Ξ·, Ξ΄Ξµ ΞΌΟ€ΞΏΟΟ Ξ½Ξ± Ο€Ξ¬Ο‰ Ο€ΞΏΟ…ΞΈΞµΞ½Ξ¬.
 		if (!f)
 			continue;
 		if (i - 1 >= 0 && dp[i][j][f] < dp[i - 1][j][f - 1]) {
@@ -76,7 +76,7 @@ int main() {
 			scanf("%d %d %lf", &A, &B, &C);
 			gasPrice[--A][--B] = C;
 		}
-		// Δεν έχει νόημα σε καμία φάση να έχω παραπάνω από N + M - 2 λίτρα στο ρεζερβουάρ.
+		// Ξ”ΞµΞ½ Ξ­Ο‡ΞµΞΉ Ξ½ΟΞ·ΞΌΞ± ΟƒΞµ ΞΊΞ±ΞΌΞ―Ξ± Ο†Ξ¬ΟƒΞ· Ξ½Ξ± Ξ­Ο‡Ο‰ Ο€Ξ±ΟΞ±Ο€Ξ¬Ξ½Ο‰ Ξ±Ο€Ο N + M - 2 Ξ»Ξ―Ο„ΟΞ± ΟƒΟ„ΞΏ ΟΞµΞ¶ΞµΟΞ²ΞΏΟ…Ξ¬Ο.
 		F = min(F, N + M - 2);
 		double minimumCost = Dijkstra();
 		minimumCost != DBL_MAX ? printf("%.2lf\n", minimumCost) : printf("Stranded on the shoulder\n");
