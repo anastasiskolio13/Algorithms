@@ -42,5 +42,8 @@
     <ClCompile Include="metro.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cheapgas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
