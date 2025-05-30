@@ -13,7 +13,7 @@ struct jewel {
 };
 
 bool compareJewelry(jewel A, jewel B) {
-	return A.V > B.V || A.V == B.V && A.M < B.M;
+	return A.V > B.V;
 }
 
 multiset<int> S;
