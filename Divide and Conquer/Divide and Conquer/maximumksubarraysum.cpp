@@ -1,8 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <vector>
-#include <algorithm>
 #include <climits>
+#include <algorithm>
 #define MAXN 1000000
 #define INF INT_MAX
 using namespace std;
