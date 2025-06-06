@@ -2,8 +2,9 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <climits>
 #define MAXN 1000000
-#define INF 1e9
+#define INF INT_MAX
 using namespace std;
 
 vector<int> A(MAXN);
@@ -25,7 +26,7 @@ int DivideAndConquer(int lo, int hi) {
 	}
 	int sumLeft = 0;
 	int maximumKSubarrayCombined = -INF;
-	for (int i = mid; i >= max(mid - K + 1, lo); --i) {
+	for (int i = mid; i >= max(mid - K + 2, lo); --i) {
 		sumLeft += A[i];
 		maximumKSubarrayCombined = max(maximumKSubarrayCombined, sumLeft + S[min(i + K - 1, hi)]);
 	}
