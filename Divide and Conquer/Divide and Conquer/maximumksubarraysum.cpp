@@ -3,7 +3,7 @@
 #include <vector>
 #include <algorithm>
 #define MAXN 1000000
-#define INF 2e9
+#define INF 1e9
 using namespace std;
 
 vector<int> A(MAXN);
@@ -19,7 +19,7 @@ int DivideAndConquer(int lo, int hi) {
 	int maximumKSubarrayRight = DivideAndConquer(mid + 1, hi);
 	int sumRight = 0;
 	S[mid] = -INF;
-	for (int i = mid + 1; i <= min(mid + K, hi); ++i) {
+	for (int i = mid + 1; i <= min(mid + K - 1, hi); ++i) {
 		sumRight += A[i];
 		S[i] = max(S[i - 1], sumRight);
 	}
@@ -27,7 +27,7 @@ int DivideAndConquer(int lo, int hi) {
 	int maximumKSubarrayCombined = -INF;
 	for (int i = mid; i >= max(mid - K + 1, lo); --i) {
 		sumLeft += A[i];
-		maximumKSubarrayCombined = max(maximumKSubarrayCombined, sumLeft + S[i + K - 1]);
+		maximumKSubarrayCombined = max(maximumKSubarrayCombined, sumLeft + S[min(i + K - 1, hi)]);
 	}
 	return max({ maximumKSubarrayLeft, maximumKSubarrayCombined, maximumKSubarrayRight });
 }
