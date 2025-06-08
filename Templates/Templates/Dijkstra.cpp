@@ -18,12 +18,11 @@ void Dijkstra(int s) {
 	dist[0] = 0;
 	Q.insert({ 0, s });
 	while (!Q.empty()) {
-		int d = Q.begin()->first;
-		int v = Q.begin()->second;
+		auto [d, v] = *Q.begin();
 		Q.erase(Q.begin());
-		for (auto adjacent : Adj[v]) {
-			int u = adjacent.first;
-			int w = adjacent.second;
+		if (d > dist[v])
+			continue;
+		for (auto [u, w] : Adj[v]) {
 			if (dist[v] + w < dist[u]) {
 				dist[u] = dist[v] + w;
 				Q.insert({ dist[u], u });
