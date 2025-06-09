@@ -15,15 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="reachforthetop.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="maximumsubsequencevalue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="plantingflowers.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="distinctvaluessplits.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
