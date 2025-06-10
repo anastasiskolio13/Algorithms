@@ -18,5 +18,11 @@
     <ClCompile Include="distinctvaluessplits.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="photoprocessing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gamers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
