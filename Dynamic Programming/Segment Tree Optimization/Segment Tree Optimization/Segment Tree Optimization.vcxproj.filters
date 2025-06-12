@@ -36,5 +36,8 @@
     <ClCompile Include="mountainrange.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="strip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
