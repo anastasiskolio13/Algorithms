@@ -16,6 +16,13 @@ int N;
 int S;
 int L;
 
+void PopFromQueues(int i) {
+	if (i == minQ.front())
+		minQ.pop_front();
+	if (i == maxQ.front())
+		maxQ.pop_front();
+}
+
 void PushToQueues(int i) {
 	while (!minQ.empty() && A[i] <= A[minQ.back()])
 		minQ.pop_back();
@@ -23,10 +30,6 @@ void PushToQueues(int i) {
 	while (!maxQ.empty() && A[i] >= A[maxQ.back()])
 		maxQ.pop_back();
 	maxQ.push_back(i);
-}
-
-void PopFromQueues(int i) {
-
 }
 
 void Update(int lo, int hi, int v, int i) {
@@ -57,14 +60,13 @@ int main() {
 	scanf("%d %d %d", &N, &S, &L);
 	for (int i = 0; i < N; ++i)
 		scanf("%d", &A[i]);
-
 	int i = N - 1;
 	for (int j = N - 1; j >= 0; --j) {
 		PushToQueues(j);
 		while (A[maxQ.front()] - A[minQ.front()] > S)
-
+			PopFromQueues(i--);
+		R[j] = i;
 	}
-
 	Update(0, N, 0, N);
 	for (int i = N - 1; i >= 0; --i) {
 		dp[i] = i + L <= R[i] + 1 ? Query(0, N, 0, i + L, R[i] + 1) + 1 : INF;
