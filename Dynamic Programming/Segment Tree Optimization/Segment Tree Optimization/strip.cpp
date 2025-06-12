@@ -16,13 +16,6 @@ int N;
 int S;
 int L;
 
-void PopFromQueues(int i) {
-	if (i == minQ.front())
-		minQ.pop_front();
-	if (i == maxQ.front())
-		maxQ.pop_front();
-}
-
 void PushToQueues(int i) {
 	while (!minQ.empty() && A[i] <= A[minQ.back()])
 		minQ.pop_back();
@@ -30,6 +23,13 @@ void PushToQueues(int i) {
 	while (!maxQ.empty() && A[i] >= A[maxQ.back()])
 		maxQ.pop_back();
 	maxQ.push_back(i);
+}
+
+void PopFromQueues(int i) {
+	if (i == minQ.front())
+		minQ.pop_front();
+	if (i == maxQ.front())
+		maxQ.pop_front();
 }
 
 void Update(int lo, int hi, int v, int i) {
