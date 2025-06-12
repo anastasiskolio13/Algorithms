@@ -3,6 +3,7 @@
 #include <vector>
 #include <deque>
 #define MAXN 100000
+#define INF 1e6
 using namespace std;
 
 deque<int> minQ;
@@ -15,13 +16,6 @@ int N;
 int S;
 int L;
 
-void PopFromQueues(int i) {
-	if (i == minQ.front())
-		minQ.pop_front();
-	if (i == maxQ.front())
-		maxQ.pop_front();
-}
-
 void PushToQueues(int i) {
 	while (!minQ.empty() && A[i] <= A[minQ.back()])
 		minQ.pop_back();
@@ -29,6 +23,13 @@ void PushToQueues(int i) {
 	while (!maxQ.empty() && A[i] >= A[maxQ.back()])
 		maxQ.pop_back();
 	maxQ.push_back(i);
+}
+
+void PopFromQueues(int i) {
+	if (i == minQ.front())
+		minQ.pop_front();
+	if (i == maxQ.front())
+		maxQ.pop_front();
 }
 
 int main() {
@@ -42,19 +43,15 @@ int main() {
 			PopFromQueues(i--);
 		R[j] = i;
 	}
-
-	//for (int i = 0; i < N; ++i)
-		//cout << R[i] << " ";
-
 	dp[N] = 0;
 	Q.push_back(N);
 	for (int i = N - 1; i >= 0; --i) {
 		while (Q.front() > R[i] + 1)
 			Q.pop_front();
-		dp[i] = dp[Q.front()] + 1;
-		while (!Q.empty() && dp[i] <= dp[Q.back()])
+		dp[i] = Q.front() >= i + L ? dp[Q.front()] + 1 : INF;
+		while (!Q.empty() && dp[i] < dp[Q.back()])
 			Q.pop_back();
 		Q.push_back(i);
 	}
-	printf("%d\n", dp[0]);
+	printf("%d\n", dp[0] >= INF ? -1 : dp[0]);
 }
