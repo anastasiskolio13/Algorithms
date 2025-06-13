@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+ο»Ώ#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <vector>
 #define MAXN 2000000
@@ -16,11 +16,11 @@ int main() {
 		scanf("%d", &M[i]);
 	// O(n^3).
 	int minimumSizeSubarraySumK = N + 1;
-	// Για καθε αρχή i.
+	// Ξ“ΞΉΞ± ΞΊΞ±ΞΈΞµ Ξ±ΟΟ‡Ξ® i.
 	for (int i = 1; i <= N; ++i) {
-		// Για κάθε τέλος j.
+		// Ξ“ΞΉΞ± ΞΊΞ¬ΞΈΞµ Ο„Ξ­Ξ»ΞΏΟ‚ j.
 		for (int j = i; j <= N; ++j) {
-			// Πάρε το άθροισμα του υποπίνακα (i, j).
+			// Ξ Ξ¬ΟΞµ Ο„ΞΏ Ξ¬ΞΈΟΞΏΞΉΟƒΞΌΞ± Ο„ΞΏΟ… Ο…Ο€ΞΏΟ€Ξ―Ξ½Ξ±ΞΊΞ± (i, j).
 			int sumOfElements = 0;
 			for (int r = i; r <= j; ++r)
 				sumOfElements += M[r];
@@ -28,16 +28,16 @@ int main() {
 				minimumSizeSubarraySumK = min(minimumSizeSubarraySumK, j - i + 1);
 		}
 	}
-	// Σύντομο if: <συνθήκη> ? <εντολή για αληθή συνθήκη> : <εντολή για ψευδή συνθήκη>;
+	// Ξ£ΟΞ½Ο„ΞΏΞΌΞΏ if: <ΟƒΟ…Ξ½ΞΈΞ®ΞΊΞ·> ? <ΞµΞ½Ο„ΞΏΞ»Ξ® Ξ³ΞΉΞ± Ξ±Ξ»Ξ·ΞΈΞ® ΟƒΟ…Ξ½ΞΈΞ®ΞΊΞ·> : <ΞµΞ½Ο„ΞΏΞ»Ξ® Ξ³ΞΉΞ± ΟΞµΟ…Ξ΄Ξ® ΟƒΟ…Ξ½ΞΈΞ®ΞΊΞ·>;
 	printf("%d\n", minimumSizeSubarraySumK == N + 1 ? 0 : minimumSizeSubarraySumK);
 
-	// O(n^3) επίσης.
+	// O(n^3) ΞµΟ€Ξ―ΟƒΞ·Ο‚.
 	minimumSizeSubarraySumK = N + 1;
-	// Για κάθε τέλος j.
+	// Ξ“ΞΉΞ± ΞΊΞ¬ΞΈΞµ Ο„Ξ­Ξ»ΞΏΟ‚ j.
 	for (int j = 1; j <= N; ++j) {
-		// Για καθε αρχή i.
+		// Ξ“ΞΉΞ± ΞΊΞ±ΞΈΞµ Ξ±ΟΟ‡Ξ® i.
 		for (int i = 1; i <= j; ++i) {
-			// Πάρε το άθροισμα του υποπίνακα (i, j).
+			// Ξ Ξ¬ΟΞµ Ο„ΞΏ Ξ¬ΞΈΟΞΏΞΉΟƒΞΌΞ± Ο„ΞΏΟ… Ο…Ο€ΞΏΟ€Ξ―Ξ½Ξ±ΞΊΞ± (i, j).
 			int sumOfElements = 0;
 			for (int r = i; r <= j; ++r)
 				sumOfElements += M[r];
