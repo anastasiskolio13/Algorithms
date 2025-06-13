@@ -18,5 +18,8 @@
     <ClCompile Include="chooseyourownpath.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="jailbreak.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

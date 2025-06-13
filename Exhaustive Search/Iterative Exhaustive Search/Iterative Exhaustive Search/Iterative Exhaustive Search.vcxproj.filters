@@ -27,5 +27,8 @@
     <ClCompile Include="minimumeuclideandistance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="kite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
