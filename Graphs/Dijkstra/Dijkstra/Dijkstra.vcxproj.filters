@@ -36,5 +36,8 @@
     <ClCompile Include="dijkstra.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="podracing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
