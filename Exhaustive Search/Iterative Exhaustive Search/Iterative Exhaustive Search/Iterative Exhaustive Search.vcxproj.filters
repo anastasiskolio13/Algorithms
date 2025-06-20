@@ -30,5 +30,11 @@
     <ClCompile Include="kite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="operators.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="longsumk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
