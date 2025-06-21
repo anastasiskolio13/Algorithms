@@ -36,5 +36,8 @@
     <ClCompile Include="evripos.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="countways.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
