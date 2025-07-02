@@ -26,7 +26,7 @@ int main() {
 	}
 	for (int j = 1; j <= K; ++j)
 		dp[j % 2][1] = 0;
-	for (int i = 1; i <= N; ++i)
+	for (int i = 2; i <= N; ++i)
 		dp[1][i] = C(1, i);
 	for (int j = 2; j <= K; ++j) {
 		for (int i = 2; i <= N; ++i) {

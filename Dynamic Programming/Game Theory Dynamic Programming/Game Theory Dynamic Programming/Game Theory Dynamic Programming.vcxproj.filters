@@ -24,5 +24,11 @@
     <ClCompile Include="coinstack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="listgame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="listgamesbstr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

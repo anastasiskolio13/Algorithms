@@ -42,5 +42,11 @@
     <ClCompile Include="terbium.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="teamwork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="binarysearchgame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

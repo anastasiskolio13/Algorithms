@@ -36,5 +36,8 @@
     <ClCompile Include="longsumk.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="kalanta.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
