@@ -15,31 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="guardiansofthelunatics.cpp">
+    <ClCompile Include="brewingportion5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="subarraysquares.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="twosawmills.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="chem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="bicoloredhorses.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="housesandschools.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="terbium.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="lannisterarmy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="catteams.cpp">
+    <ClCompile Include="tsp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -45,7 +45,10 @@
     <ClCompile Include="teamwork.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="binarysearchgame.cpp">
+    <ClCompile Include="weirdbank.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="weirdbankmemo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
