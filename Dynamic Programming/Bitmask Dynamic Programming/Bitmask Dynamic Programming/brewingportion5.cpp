@@ -34,7 +34,7 @@ int main() {
 				continue;
 			for (int j = i + 1; j < 2 * N; ++j)
 				if (s & (1 << j))
-					dp[s] = max(dp[s], dp[s ^ (1 << i) ^ (1 << j)] + A[i][j]);
+					dp[s] = max(dp[s], dp[s & ~((1 << i) | (1 << j))] + A[i][j]);
 		}
 	}
 	printf("%lld\n", dp[(1 << 2 * N) - 1]);
