@@ -30,5 +30,8 @@
     <ClCompile Include="hamiltonianflights.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="kefaanddishes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
