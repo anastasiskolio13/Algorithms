@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #define MAXN 16
+#define INF 1e18
 using namespace std;
 
 vector<vector<int>> A(MAXN, vector<int>(MAXN));
@@ -25,7 +26,9 @@ int main() {
 	}
 	dp[0] = 0;
 	for (int s = 1; s < (1 << N); ++s) {
-
+		dp[s] = -INF;
+		for (int t = s; t != 0; t = (t - 1) & s) 
+			dp[s] = max(dp[s], dp[s & ~t] + C[t]);
 	}
 	printf("%lld\n", dp[(1 << N) - 1]);
 }
