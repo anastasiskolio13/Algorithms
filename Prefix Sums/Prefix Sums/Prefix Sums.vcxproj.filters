@@ -15,30 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="seti.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="matrix.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="maxsubarraysum.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="minimumeuclideandistance.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="kite.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="operators.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="longsumk.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="kalanta.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="covid19.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

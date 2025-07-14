@@ -33,5 +33,11 @@
     <ClCompile Include="kefaanddishes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lookingfororder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="teambuiliding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
