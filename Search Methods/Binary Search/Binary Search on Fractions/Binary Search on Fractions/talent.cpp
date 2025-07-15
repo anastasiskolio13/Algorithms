@@ -3,6 +3,7 @@
 #include <vector>
 #include <algorithm>
 #include <cfloat>
+#include <cmath>
 #define MAXN 250
 #define MAXW 1000
 #define eps 1e-6
