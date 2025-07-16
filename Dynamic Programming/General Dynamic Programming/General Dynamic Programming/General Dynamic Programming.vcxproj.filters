@@ -51,5 +51,8 @@
     <ClCompile Include="weirdbankmemo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="feast.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
