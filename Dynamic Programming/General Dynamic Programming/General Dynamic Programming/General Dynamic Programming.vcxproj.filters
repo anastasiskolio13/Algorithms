@@ -54,5 +54,8 @@
     <ClCompile Include="feast.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="christmasshopping.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
