@@ -22,7 +22,9 @@
     <ClCompile Include="chem.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="christmasshopping.cpp" />
+    <ClCompile Include="christmasshopping.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="countways.cpp">
       <LanguageStandard Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">stdcpp17</LanguageStandard>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -44,6 +46,7 @@
     <ClCompile Include="reveillon.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="socialcredits.cpp" />
     <ClCompile Include="teamwork.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

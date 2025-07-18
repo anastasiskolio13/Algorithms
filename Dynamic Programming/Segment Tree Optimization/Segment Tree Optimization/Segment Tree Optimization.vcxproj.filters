@@ -42,5 +42,8 @@
     <ClCompile Include="bookeaters.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="socialcredits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
