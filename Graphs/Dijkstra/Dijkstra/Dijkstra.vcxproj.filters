@@ -27,9 +27,6 @@
     <ClCompile Include="comebackquickly.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ejoi.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="visit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -40,6 +37,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="restaurants.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="electronics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -12,7 +12,7 @@ vector<int> A(MAXN);
 vector<int> P(MAXN);
 vector<int> TreeOne(4 * MAXN);
 vector<int> TreeTwo(4 * MAXN);
-vector<vector<int>> dp(MAXN, vector<int>(2));
+vector<vector<int>> dp(MAXN, vector<int>(MAXK + 1));
 int N;
 int K;
 
@@ -51,24 +51,19 @@ int main() {
 		P[index] = i++;
 	for (int i = N - 1; i >= 0; --i) {
 		auto it = S.upper_bound({ A[i], N });
-		dp[i][K % 2] = it != S.end() ? Query(TreeOne, 0, N - 1, 0, P[it->second], N - 1) + 1 : 1;
-		Update(TreeOne, 0, N - 1, 0, P[i], dp[i][K % 2]);
+		dp[i][K] = it != S.end() ? Query(TreeOne, 0, N - 1, 0, P[it->second], N - 1) + 1 : 1;
+		Update(TreeOne, 0, N - 1, 0, P[i], dp[i][K]);
 	}
 	for (int j = K - 1; j >= 0; --j) {
 		TreeTwo = TreeOne;
-		fill(TreeOne.begin(), TreeOne.begin() + N, 0);
+		fill(TreeOne.begin(), TreeOne.begin() + 4 * N, 0);
 		for (int i = N - 1; i >= 0; --i) {
 			auto it = S.upper_bound({ A[i], N });
-			dp[i][j % 2] = Query(TreeTwo, 0, N - 1, 0, 0, P[(--it)->second]) + 1;
+			dp[i][j] = Query(TreeTwo, 0, N - 1, 0, 0, P[(--it)->second]) + 1;
 			if ((++it) != S.end())
-				dp[i][j % 2] = max(dp[i][j % 2], Query(TreeOne, 0, N - 1, 0, P[it->second], N - 1) + 1);
-			Update(TreeOne, 0, N - 1, 0, P[i], dp[i][j % 2]);
+				dp[i][j] = max(dp[i][j], Query(TreeOne, 0, N - 1, 0, P[it->second], N - 1) + 1);
+			Update(TreeOne, 0, N - 1, 0, P[i], dp[i][j]);
 		}
 	}
-	for (int i = 0; i < N; ++i)
-		cout << dp[i][0] << " ";
-	cout << endl;
-	for (int i = 0; i < N; ++i)
-		cout << dp[i][1] << " ";
-	//printf("%d\n", Query(TreeOne, 0, N - 1, 0, 0, N - 1));
+	printf("%d\n", Query(TreeOne, 0, N - 1, 0, 0, N - 1));
 }

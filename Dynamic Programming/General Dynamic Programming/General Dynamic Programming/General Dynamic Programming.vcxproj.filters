@@ -60,5 +60,8 @@
     <ClCompile Include="socialcredits.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="quests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
