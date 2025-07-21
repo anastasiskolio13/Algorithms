@@ -63,5 +63,11 @@
     <ClCompile Include="quests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="snackattack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="trainsorting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

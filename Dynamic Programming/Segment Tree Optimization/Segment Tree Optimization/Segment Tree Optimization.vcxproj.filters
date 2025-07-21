@@ -45,5 +45,8 @@
     <ClCompile Include="socialcredits.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="trainsorting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
