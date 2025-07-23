@@ -11,7 +11,7 @@ vector<vector<int>> horizontalTrees(MAXN, vector<int>(4 * MAXN));
 vector<vector<int>> dp(MAXN, vector<int>(MAXN));
 vector<int> A(MAXN);
 vector<int> P(MAXN);
-int N;
+int N;;
 
 void Update(int lo, int hi, int v, int i, int x, int k, bool isHorizontalTree) {
 	if (lo == hi) {
@@ -52,8 +52,11 @@ int main() {
 			auto iteratorOne = S.upper_bound({ A[i], N });
 			auto iteratorTwo = S.lower_bound({ A[j], -1 });
 			if (iteratorOne != S.end())
-				dp[i][j] = max(dp[i][j], Query(0, N - 1, 0, P[iteratorOne->second], N - 1, false) + 1);
-
+				dp[i][j] = max(dp[i][j], Query(0, N - 1, 0, P[iteratorOne->second], N - 1, j, false) + 1);
+			if (iteratorTwo != S.begin())
+				dp[i][j] = max(dp[i][j], Query(0, N - 1, 0, 0, P[(--iteratorTwo)->second], i, true) + 1);
+			Update(0, N - 1, 0, P[i], dp[i][j], j, false);
+			Update(0, N - 1, 0, P[j], dp[i][j], i, true);
 		}
 	}
 	int ans = 0;
