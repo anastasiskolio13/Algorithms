@@ -42,5 +42,8 @@
     <ClCompile Include="artskjid.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="woodenhouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
