@@ -72,5 +72,8 @@
     <ClCompile Include="takingcues.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="go.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
