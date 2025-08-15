@@ -48,5 +48,8 @@
     <ClCompile Include="trainsorting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="segmenttreeoptimization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
