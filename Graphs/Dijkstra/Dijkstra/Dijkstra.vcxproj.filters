@@ -39,7 +39,7 @@
     <ClCompile Include="restaurants.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="electronics.cpp">
+    <ClCompile Include="rudolfandcodevid24.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

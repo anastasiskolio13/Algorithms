@@ -45,5 +45,11 @@
     <ClCompile Include="woodenhouse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="persuasion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kronican.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

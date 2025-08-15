@@ -63,9 +63,6 @@
     <ClCompile Include="quests.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="snackattack.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="trainsorting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -73,6 +70,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="go.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="squirelelection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="knapsack2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
