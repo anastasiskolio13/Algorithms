@@ -51,5 +51,8 @@
     <ClCompile Include="segmenttreeoptimization.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="boats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
