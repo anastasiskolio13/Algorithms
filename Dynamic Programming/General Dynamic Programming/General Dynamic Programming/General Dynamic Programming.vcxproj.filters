@@ -78,5 +78,14 @@
     <ClCompile Include="knapsack2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="knapsack21.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="slicice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="boats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

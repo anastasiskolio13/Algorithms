@@ -27,5 +27,8 @@
     <ClCompile Include="station.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="vouchers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
