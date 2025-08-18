@@ -21,5 +21,8 @@
     <ClCompile Include="treematching.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="christmasrace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

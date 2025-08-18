@@ -47,8 +47,8 @@ int main() {
 		S.insert({ A[i], i });
 	}
 	int i = 0;
-	for (auto [_, index] : S)
-		P[index] = i++;
+	for (auto it = S.begin(); it != S.end(); ++it)
+		P[it->second] = i++;
 	for (int i = N - 1; i >= 0; --i) {
 		auto it = S.upper_bound({ A[i], N });
 		dp[i][K] = it != S.end() ? Query(TreeOne, 0, N - 1, 0, P[it->second], N - 1) + 1 : 1;

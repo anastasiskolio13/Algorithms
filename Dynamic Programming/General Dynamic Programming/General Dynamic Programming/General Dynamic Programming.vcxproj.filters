@@ -87,5 +87,11 @@
     <ClCompile Include="boats.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="tower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="privacy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
