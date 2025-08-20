@@ -93,5 +93,14 @@
     <ClCompile Include="privacy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="acoinproblem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="codingcompany.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fetchquest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
