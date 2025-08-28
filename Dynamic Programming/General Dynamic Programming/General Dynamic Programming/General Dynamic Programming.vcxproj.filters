@@ -102,5 +102,14 @@
     <ClCompile Include="fetchquest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="thefinalbattle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thefinalbattle - nm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bowlingfornumbers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

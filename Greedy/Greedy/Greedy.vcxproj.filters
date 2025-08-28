@@ -30,5 +30,8 @@
     <ClCompile Include="vouchers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="houseofcards.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

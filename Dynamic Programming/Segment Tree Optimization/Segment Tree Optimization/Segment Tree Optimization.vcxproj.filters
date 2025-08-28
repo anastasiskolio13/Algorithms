@@ -54,5 +54,8 @@
     <ClCompile Include="boats.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="poklon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
