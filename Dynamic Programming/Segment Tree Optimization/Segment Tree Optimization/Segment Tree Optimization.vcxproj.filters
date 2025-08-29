@@ -39,13 +39,13 @@
     <ClCompile Include="strip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="bookeaters.cpp">
+    <ClCompile Include="bookeaters TLE.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="socialcredits.cpp">
+    <ClCompile Include="socialcredits WA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="trainsorting.cpp">
+    <ClCompile Include="trainsorting WA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="segmenttreeoptimization.cpp">
@@ -54,7 +54,10 @@
     <ClCompile Include="boats.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="poklon.cpp">
+    <ClCompile Include="poklon WA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="skylinephoto.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
