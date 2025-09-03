@@ -60,5 +60,11 @@
     <ClCompile Include="skylinephoto.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="araceagainsttime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="road.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

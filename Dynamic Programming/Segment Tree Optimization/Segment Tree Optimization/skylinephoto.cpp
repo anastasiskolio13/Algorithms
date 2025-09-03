@@ -13,7 +13,7 @@ vector<int> P(MAXN);
 vector<int> S(MAXN);
 vector<long long> M(MAXN);
 vector<int> R(MAXN);
-vector<long long> T(4 * (MAXN + 1));
+vector<long long> T(4 * (MAXN + 1) + 1);
 vector<long long> dp(MAXN + 1);
 int N;
 
@@ -45,10 +45,10 @@ void Update(int lo, int hi, int v, int i) {
 	}
 	int mid = (lo + hi) / 2;
 	if (i <= mid)
-		Update(lo, mid, 2 * v + 1, i);
+		Update(lo, mid, 2 * v, i);
 	else
-		Update(mid + 1, hi, 2 * v + 2, i);
-	T[v] = max(T[2 * v + 1], T[2 * v + 2]);
+		Update(mid + 1, hi, 2 * v + 1, i);
+	T[v] = max(T[2 * v], T[2 * v + 1]);
 }
 
 long long Query(int lo, int hi, int v, int qlo, int qhi) {
@@ -57,8 +57,8 @@ long long Query(int lo, int hi, int v, int qlo, int qhi) {
 	if (qlo > hi || qhi < lo)
 		return -INF;
 	int mid = (lo + hi) / 2;
-	long long maxLeft = Query(lo, mid, 2 * v + 1, qlo, qhi);
-	long long maxRight = Query(mid + 1, hi, 2 * v + 2, qlo, qhi);
+	long long maxLeft = Query(lo, mid, 2 * v, qlo, qhi);
+	long long maxRight = Query(mid + 1, hi, 2 * v + 1, qlo, qhi);
 	return max(maxLeft, maxRight);
 }
 
@@ -81,9 +81,9 @@ int main() {
 		Q.push(i);
 	}
 	for (int i = N - 1; i >= 0; --i) {
-		long long maximumValue = max(Query(0, N, 0, i + 1, R[i] + 1) + B[i], M[Find(i)]);
+		long long maximumValue = max(Query(0, N, 1, i + 1, R[i] + 1) + B[i], M[Find(i)]);
 		dp[i] = M[P[i] /*Find(i)*/] = maximumValue;
-		Update(0, N, 0, i);
+		Update(0, N, 1, i);
 	}
 	/*for (int i = N - 1; i >= 0; --i) {
 		int argMinHeight = i;
