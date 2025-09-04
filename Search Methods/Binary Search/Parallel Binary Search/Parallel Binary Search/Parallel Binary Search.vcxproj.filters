@@ -18,5 +18,8 @@
     <ClCompile Include="newroadsqueries.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="roadtrip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
