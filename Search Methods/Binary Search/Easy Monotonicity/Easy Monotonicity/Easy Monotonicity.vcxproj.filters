@@ -27,5 +27,11 @@
     <ClCompile Include="union.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="testiterations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hiddeninteger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

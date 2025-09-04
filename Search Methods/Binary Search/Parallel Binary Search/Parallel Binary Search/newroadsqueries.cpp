@@ -1,7 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <vector>
-#include <tuple>
 #include <cmath>
 #define MAXN 200000
 #define MAXM 200000
