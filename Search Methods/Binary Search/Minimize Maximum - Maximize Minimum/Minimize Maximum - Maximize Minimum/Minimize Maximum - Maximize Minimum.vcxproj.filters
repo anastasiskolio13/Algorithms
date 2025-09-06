@@ -24,5 +24,8 @@
     <ClCompile Include="ljutnja.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ducktransport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
