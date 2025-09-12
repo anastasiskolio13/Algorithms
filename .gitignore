@@ -1,4 +1,3 @@
-# Visual Studio build and debug files
 .vs/
 *.user
 **/x64/Debug/

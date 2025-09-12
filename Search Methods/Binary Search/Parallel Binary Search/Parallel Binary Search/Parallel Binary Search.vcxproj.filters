@@ -21,5 +21,8 @@
     <ClCompile Include="roadtrip.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="stamprally.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

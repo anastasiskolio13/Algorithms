@@ -18,5 +18,8 @@
     <ClCompile Include="friends.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="reachabilityquery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
