@@ -33,8 +33,5 @@
     <ClCompile Include="houseofcards.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="rentalservice.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>
