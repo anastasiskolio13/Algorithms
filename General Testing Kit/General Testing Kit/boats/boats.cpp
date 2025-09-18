@@ -60,8 +60,9 @@ void SolveTestCase(int j) {
 	P.resize(N);
 	T.resize(4 * N);
 	dp.resize(N);
-	for (int i = 0; i < N; ++i) 
-		scanf("%d %d", &C[i].A, &C[i].B);
+	for (int i = 0; i < N; ++i)
+		cin >> C[i].A >> C[i].B;
+		//scanf("%d %d", &C[i].A, &C[i].B);
 	sort(C.begin(), C.begin() + N, compareCouples);
 	for (int i = 0; i < N; ++i)
 		S.insert({ C[i].B, i });
@@ -75,11 +76,14 @@ void SolveTestCase(int j) {
 	int myAnswer = *max_element(dp.begin(), dp.begin() + N);
 	freopen(filenameTwo.c_str(), "r", stdin);
 	int correctAnswer;
+	cin >> correctAnswer;
 	scanf("%d", &correctAnswer);
 	if (myAnswer == correctAnswer)
-		printf("AC\n");
+		cout << "AC" << endl;
+	//printf("AC\n");
 	else
-		printf("WA\n");
+		cout << "WA" << endl;
+		//printf("WA\n");
 }
 
 int main() {
