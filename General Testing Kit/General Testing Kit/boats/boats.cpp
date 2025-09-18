@@ -77,7 +77,7 @@ void SolveTestCase(int j) {
 	freopen(filenameTwo.c_str(), "r", stdin);
 	int correctAnswer;
 	cin >> correctAnswer;
-	scanf("%d", &correctAnswer);
+	//scanf("%d", &correctAnswer);
 	if (myAnswer == correctAnswer)
 		cout << "AC" << endl;
 	//printf("AC\n");

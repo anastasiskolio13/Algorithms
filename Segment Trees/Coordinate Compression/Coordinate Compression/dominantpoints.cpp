@@ -3,7 +3,7 @@
 #include <vector>
 #include <set>
 #include <cfloat>
-#define MAXN 100000
+#define MAXN 98411
 #define INF DBL_MAX
 using namespace std;
 
