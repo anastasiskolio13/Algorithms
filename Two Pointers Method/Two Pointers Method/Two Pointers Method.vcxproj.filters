@@ -27,5 +27,8 @@
     <ClCompile Include="abknapsack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="dominantpoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

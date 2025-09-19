@@ -33,13 +33,7 @@
     <ClCompile Include="subarraysumqueries2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="findthepath.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="yakinikurestaurants.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="dominantpoints.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
