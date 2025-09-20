@@ -33,7 +33,7 @@ int main() {
 		SMY[i] = max(SMY[i + 1], P[i].Y);
 	int j = 0;
 	for (int i = 0; i < N; ++i) {
-		while (j < N && P[i].X >= P[j].X)
+		while (j < N && P[i].X == P[j].X)
 			++j;
 		if (P[i].Y >= SMY[j])
 			D.insert(P[i].ID);
