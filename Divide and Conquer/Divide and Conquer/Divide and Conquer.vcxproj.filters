@@ -36,5 +36,8 @@
     <ClCompile Include="yakinikurestaurants.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mitsiko.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

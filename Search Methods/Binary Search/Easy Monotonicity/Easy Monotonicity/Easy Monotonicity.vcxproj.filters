@@ -39,5 +39,8 @@
     <ClCompile Include="gpt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="childrenholiday.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
