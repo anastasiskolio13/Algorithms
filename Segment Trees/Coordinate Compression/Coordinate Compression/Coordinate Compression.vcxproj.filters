@@ -21,5 +21,8 @@
     <ClCompile Include="dominantpoints.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="weirdpoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -18,5 +18,11 @@
     <ClCompile Include="rangeupdatequeries.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="rangeupdatesumquery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rangeupdateminimumquery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

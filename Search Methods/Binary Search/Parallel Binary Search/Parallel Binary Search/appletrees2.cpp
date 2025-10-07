@@ -79,7 +79,8 @@ int main() {
 			if (lo < hi)
 				TS[(lo + hi) / 2].push_back(j);
 		}
-		lazyUpdate(0, N - 1, 0, 0, N - 1, 0);
+		fill(T.begin(), T.begin() + 4 * N, 0LL);
+		fill(L.begin(), L.begin() + 4 * N, 0LL);
 		for (int j = 0; j < Q; ++j) {
 			lazyUpdate(0, N - 1, 0, U[j][0], U[j][1], U[j][2]);
 			for (int k : TS[j]) {
@@ -94,7 +95,8 @@ int main() {
 		TS[i].clear();
 	for (int i = 0; i < N; ++i)
 		TS[R[i].first].push_back(i);
-	lazyUpdate(0, N - 1, 0, 0, N - 1, 0);
+	fill(T.begin(), T.begin() + 4 * N, 0LL);
+	fill(L.begin(), L.begin() + 4 * N, 0LL);
 	for (int i = 0; i < Q; ++i) {
 		lazyUpdate(0, N - 1, 0, U[i][0], U[i][1], U[i][2]);
 		for (int j : TS[i]) {
