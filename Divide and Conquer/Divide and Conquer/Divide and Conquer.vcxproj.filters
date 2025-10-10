@@ -36,7 +36,10 @@
     <ClCompile Include="yakinikurestaurants.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mitsiko.cpp">
+    <ClCompile Include="mongeconditiontest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="alternativequery.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

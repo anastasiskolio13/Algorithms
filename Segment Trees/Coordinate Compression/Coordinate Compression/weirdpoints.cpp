@@ -60,10 +60,9 @@ int main() {
 			I[index] = i++;
 		int ans = 0;
 		for (int i = 0; i < N; ++i) {
-			int numberOfDominatedPoints = Query(T, 0, N - 1, 0, 0, I[i]);
-			ans += (abs(2 * numberOfDominatedPoints - N + 1) >= K);
+			ans += (abs(2 * Query(T, 0, N - 1, 0, 0, I[i]) - N + 1) >= K);
 			Update(T, I, 0, N - 1, 0, i);
 		}
-		printf("%d\n", ans);+
+		printf("%d\n", ans);
 	}
 }

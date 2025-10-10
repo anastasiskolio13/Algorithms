@@ -27,7 +27,7 @@
     <ClCompile Include="ducktransport.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="movingbasement.cpp">
+    <ClCompile Include="gap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
