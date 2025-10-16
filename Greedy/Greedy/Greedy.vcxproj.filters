@@ -36,7 +36,7 @@
     <ClCompile Include="jabuke.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="slaythedragon.cpp">
+    <ClCompile Include="pickingflowers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
