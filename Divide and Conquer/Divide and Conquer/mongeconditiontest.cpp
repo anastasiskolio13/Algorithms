@@ -2,19 +2,30 @@
 #include <iostream>
 #include <vector>
 #define MAXN 1000
+#define INF 1e9
 using namespace std;
 
 vector<int> A(MAXN);
 int N;
 
 int C(int i, int j) {
-	int min_el = INT_MAX;
-	int max_el = INT_MIN;
+	int maxOne, maxTwo, maxThree;
+	maxOne = maxTwo = maxThree = -0;
 	for (int k = i; k <= j; ++k) {
-		min_el = min(min_el, A[k]);
-		max_el = max(max_el, A[k]);
+		if (A[k] >= maxOne) {
+			maxThree = maxTwo;
+			maxTwo = maxOne;
+			maxOne = A[k];
+		}
+		else if (A[k] >= maxTwo) {
+			maxThree = maxTwo;
+			maxTwo = A[k];
+		}
+		else if (A[k] >= maxThree) {
+			maxThree = A[k];
+		}
 	}
-	return (max_el - min_el) * i;
+	return maxOne + maxTwo + maxThree + i - j;
 }
 
 bool isMongeConditionSatisfied(int a, int b, int c, int d) {
@@ -26,10 +37,10 @@ int main() {
 	for (int i = 0; i < N; ++i)
 		scanf("%d", &A[i]);
 	int k = 0;
-	for (int a = 0; a < N; ++a)
-		for (int b = a; b < N; ++b)
-			for (int c = b; c < N; ++c)
-				for (int d = c; d < N; ++d)
+	for (int a = 1; a <= N; ++a)
+		for (int b = a; b <= N; ++b)
+			for (int c = b; c <= N; ++c)
+				for (int d = c; d <= N; ++d)
 					if (!isMongeConditionSatisfied(a, b, c, d))
 						++k;
 					//printf(isMongeConditionSatisfied(a, b, c, d) ? "YES\n" : "NO\n");
