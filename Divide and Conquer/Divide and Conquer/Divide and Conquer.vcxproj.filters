@@ -60,5 +60,8 @@
     <ClCompile Include="lis2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="3d partial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
