@@ -14,5 +14,6 @@ namespace C_
             for (int i = 0; i < N; ++i) 
                 A[i] = int.Parse(input[i]);
         }
+       
     }
 }

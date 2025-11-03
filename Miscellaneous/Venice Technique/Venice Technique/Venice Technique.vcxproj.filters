@@ -15,17 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Assignment and Sum.cpp">
+    <ClCompile Include="VeniceSet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Addition and Sum.cpp">
+    <ClCompile Include="QueryingMultiset.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Addition and Minimum.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Assignment and Minimum.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="VeniceSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

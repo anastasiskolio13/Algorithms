@@ -15,7 +15,7 @@ int N;
 void Dijkstra(int s) {
 	for (int v = 0; v < N; ++v)
 		dist[v] = INF;
-	dist[0] = 0;
+	dist[s] = 0;
 	Q.insert({ 0, s });
 	while (!Q.empty()) {
 		auto [d, v] = *Q.begin();
