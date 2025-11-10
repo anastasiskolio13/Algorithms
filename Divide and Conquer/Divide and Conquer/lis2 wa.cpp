@@ -112,4 +112,6 @@ int main() {
 	}
 	CDQ(0, 2 * N - 1, Q, A);
 	printf("%d\n", *max_element(A.begin(), A.end()));
+
+
 }
