@@ -28,6 +28,8 @@ void ComputeDP(int j, int lo, int hi, int opt_lo, int opt_hi) {
 			opt_i = i;
 		}
 	}
+	if (min(mid - opt_lo + 1, opt_hi - opt_lo + 1) > hi - lo + 1) 
+		cout << 17 << endl;
 	ComputeDP(j, lo, mid - 1, opt_lo, opt_i);
 	ComputeDP(j, mid + 1, hi, opt_i, opt_hi);
 }
@@ -43,5 +45,5 @@ int main() {
 		dp[0][i] = INF;
 	for (int j = 1; j <= K; ++j)
 		ComputeDP(j, 1, N, 1, N);
-	printf("%lld\n", dp[K][N]);
+	//printf("%lld\n", dp[K][N]);
 }
