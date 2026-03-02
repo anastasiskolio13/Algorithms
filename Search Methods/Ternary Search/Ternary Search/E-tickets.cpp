@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <cmath>
 using namespace std;
 
 int T;
@@ -8,25 +9,24 @@ int B;
 int C;
 int D;
 
-int Cost(int K) {
-    int M = ceil((double)(N - K) / 2);
+long long Cost(long long M) {
+    long long K = max(N - 2 * M, 0LL);
     return A * K * (K + 1) / 2 + B * K + C * M * (M + 1) / 2 + D * M;
 }
 
 int main() {
-    scanf("%d", &T);
+    cin >> T;
     while (T--) {
-        scanf("%d %d %d %d %d", &N, &A, &B, &C, &D);
+        cin >> N >> A >> B >> C >> D;
         int lo = 0;
-        int hi = N;
+        int hi = ceil((double)N / 2);
         while (lo < hi) {
             int mid = (lo + hi) / 2;
             if (Cost(mid) > Cost(mid + 1))
                 lo = mid + 1;
-            else
+            else 
                 hi = mid;
         }
-        cout << lo << " " << ceil((double)(N - lo) / 2) << endl;
-        //printf("%d %d\n", lo, (int)ceil((double)(N - lo) / 2));
+        cout << max(N - 2 * lo, 0) << " " << lo << endl;
     }
 }
