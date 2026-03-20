@@ -30,3 +30,5 @@ int main() {
         cout << max(N - 2 * lo, 0) << " " << lo << endl;
     }
 }
+
+ljix 
