@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <memory>
 #include <cmath>
 #define MAXN 100000
 #define MAXK 100000
