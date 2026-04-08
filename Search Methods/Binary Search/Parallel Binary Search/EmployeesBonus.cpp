@@ -16,7 +16,6 @@ vector<int> S(MAXN);
 vector<int> E(MAXN);
 vector<long long> T(4 * MAXN);
 vector<long long> L(4 * MAXN);
-
 int N;
 int K;
 int timer = -1;
