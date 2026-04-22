@@ -35,17 +35,10 @@ int main() {
     dp[0][0] = 0;
     for (int i = 1; i <= N; ++i)
         dp[0][i] = INF;
-    //for (int j = 1; j <= K; ++j)  
-        //dp[j][0] = INF;
     for (int j = 1; j <= K; ++j) {
         dp[j][0] = INF;
         for (int i = 1; i <= N; ++i) {
-            //dp[j][i] = min(dp[j - 1][L[i] - 1] + A[i], L[i] == 1 ? INF : dp[j][L[i] - 1]);
-            dp[j][i] = L[i] == 1 ? INF : dp[j][L[i] - 1];
-            int minOne = INF;
-            for (int k = L[i]; k <= i; ++k)
-                minOne = min(minOne, dp[j - 1][k - 1]);
-            dp[j][i] = min(dp[j][i], minOne + A[i]);
+            dp[j][i] = min(min(dp[j - 1][L[i] - 1], dp[j - 1][i - 1]) + A[i], L[i] == 1 ? INF : dp[j][L[i] - 1]);
         }
     }
     printf("%d\n", dp[K][N]);

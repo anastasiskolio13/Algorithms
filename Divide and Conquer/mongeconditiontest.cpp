@@ -9,27 +9,17 @@ vector<int> A(MAXN);
 int N;
 
 int C(int i, int j) {
-	int maxOne, maxTwo, maxThree;
-	maxOne = maxTwo = maxThree = -0;
+	int min_el = INF;
+	int p = 1;
 	for (int k = i; k <= j; ++k) {
-		if (A[k] >= maxOne) {
-			maxThree = maxTwo;
-			maxTwo = maxOne;
-			maxOne = A[k];
-		}
-		else if (A[k] >= maxTwo) {
-			maxThree = maxTwo;
-			maxTwo = A[k];
-		}
-		else if (A[k] >= maxThree) {
-			maxThree = A[k];
-		}
+		min_el = min(min_el, A[k]);
+		p += A[k];
 	}
-	return maxOne + maxTwo + maxThree + i - j;
+	return min_el * p;
 }
 
 bool isMongeConditionSatisfied(int a, int b, int c, int d) {
-	return C(a, c) + C(b, d) >= C(a, d) + C(b, c);
+	return C(a, c) + C(b, d) <= C(a, d) + C(b, c);
 }
 
 int main() {
