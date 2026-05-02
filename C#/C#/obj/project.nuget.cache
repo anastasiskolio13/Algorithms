@@ -1,8 +1,39 @@
 {
   "version": 2,
-  "dgSpecHash": "figeLxSQaIY=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\30697\\Documents\\Algorithms\\C#\\C#\\C#.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "dgSpecHash": "wTpSWGqf/Bc=",
+  "success": false,
+  "projectFilePath": "C:\\Algorithms\\C#\\C#\\C#.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\anast\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.23\\microsoft.netcore.app.ref.8.0.23.nupkg.sha512",
+    "C:\\Users\\anast\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.23\\microsoft.windowsdesktop.app.ref.8.0.23.nupkg.sha512",
+    "C:\\Users\\anast\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.23\\microsoft.aspnetcore.app.ref.8.0.23.nupkg.sha512",
+    "C:\\Users\\anast\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.23\\microsoft.netcore.app.host.win-x64.8.0.23.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://tfs.mediamonitors.com/DefaultCollection/_packaging/media-monitors/nuget/v3/index.json.\r\n  No such host is known. (tfs.mediamonitors.com:443)\r\n  No such host is known.",
+      "projectPath": "C:\\Algorithms\\C#\\C#\\C#.csproj",
+      "filePath": "C:\\Algorithms\\C#\\C#\\C#.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://tfs.mediamonitors.com/DefaultCollection/_packaging/media-monitors/nuget/v3/index.json.\r\n  No such host is known. (tfs.mediamonitors.com:443)\r\n  No such host is known.",
+      "projectPath": "C:\\Algorithms\\C#\\C#\\C#.csproj",
+      "filePath": "C:\\Algorithms\\C#\\C#\\C#.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://tfs.mediamonitors.com/DefaultCollection/_packaging/media-monitors/nuget/v3/index.json.",
+      "projectPath": "C:\\Algorithms\\C#\\C#\\C#.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Algorithms\\C#\\C#\\C#.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

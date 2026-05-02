@@ -22,12 +22,9 @@ int main() {
 			int absoluteSum = abs(A[i] + A[j]);
 			if (absoluteSum < minimumDifference) {
 				minimumDifference = absoluteSum;
-				// Πρώτος τρόπος.
 				pairOfIndices.first = i;
 				pairOfIndices.second = j;
-				// Δεύτερος τρόπος.
 				pairOfIndices = { i, j };
-				// Τρίτος τρόπος.
 				pairOfIndices = make_pair(i, j);
 			}
 		}
