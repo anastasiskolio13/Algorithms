@@ -9,17 +9,15 @@ vector<int> A(MAXN);
 int N;
 
 int C(int i, int j) {
-	int min_el = INF;
-	int p = 1;
+	int sum = 0;
 	for (int k = i; k <= j; ++k) {
-		min_el = min(min_el, A[k]);
-		p += A[k];
+		sum += A[k] * (k - i + 1);
 	}
-	return min_el * p;
+	return sum;
 }
 
 bool isMongeConditionSatisfied(int a, int b, int c, int d) {
-	return C(a, c) + C(b, d) <= C(a, d) + C(b, c);
+	return C(a, c) + C(b, d) >= C(a, d) + C(b, c);
 }
 
 int main() {

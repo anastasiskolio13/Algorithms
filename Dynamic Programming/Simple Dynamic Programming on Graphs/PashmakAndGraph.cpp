@@ -40,7 +40,6 @@ int main()
 		}
 	}
 
-
 	for (int i = 0; i < M; ++i)
 	{
 		Adj[E[i][0]].push_back(i);
