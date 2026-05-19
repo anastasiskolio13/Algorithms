@@ -25,9 +25,9 @@ int main()
 	}
 
 	vector<int> D(N);
-	vector<int> C(N, 0);
-
 	set<pair<int, int>> Q;
+
+	vector<int> C(N, 0);
 
 	for (int v = 1; v < N; ++v)
 	{
@@ -38,7 +38,7 @@ int main()
 	D[0] = 0;
 	Q.insert(make_pair(0, 0));
 
-	while (!Q.empty())
+	for (int i = 0; i < N - 1; ++i)
 	{
 		auto [_, v] = *Q.begin();
 		Q.erase(Q.begin());
@@ -50,6 +50,7 @@ int main()
 				Q.erase(make_pair(D[u], u));
 				D[u] = D[v] + w;
 				Q.insert(make_pair(D[u], u));
+				
 				C[u] = 1;
 			}
 			else if (D[v] + w == D[u])
