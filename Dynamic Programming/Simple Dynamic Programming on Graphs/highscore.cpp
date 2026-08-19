@@ -28,5 +28,6 @@ int main() {
 				dp[v][i] = max(dp[v][i], dp[u][i - 1] + w);
 		}
 	}
+
 	printf("%lld\n", dp[0][N - 1]);
 }

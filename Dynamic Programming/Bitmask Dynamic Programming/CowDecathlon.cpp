@@ -33,7 +33,7 @@ int main()
 		}
 	}
 
-	vector<int> dp(1 << N, INF);
+	vector<int> dp(1 << N, -INF);
 
 	dp[0] = 0;
 
@@ -45,7 +45,14 @@ int main()
 		{
 			if (s & (1 << i))
 			{
-				dp[s] = max(dp[s], dp[s & ~(1 << i)] + S[i][j]);
+				int assignCurrentCow = dp[s & ~(1 << i)] + S[i][subsetSize - 1];
+
+				for (auto [p, a] : B[subsetSize - 1])
+				{
+					assignCurrentCow += 
+				}
+
+				//dp[s] = max(dp[s], dp[s & ~(1 << i)] + S[i][j]);
 			}
 		}
 	}
